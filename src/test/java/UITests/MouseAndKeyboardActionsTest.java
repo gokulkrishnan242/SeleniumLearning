@@ -34,7 +34,7 @@ public class MouseAndKeyboardActionsTest extends BaseTest{
         MouseAndKeyboardActionsPage mouse = new MouseAndKeyboardActionsPage(driver);
         mouse.clickMouseHoverMenu();
         String msg = mouse.clickDoubleClick();
-        softAssert.assertEquals(msg, " successful! You have triggered the double-click action.");
+        softAssert.assertEquals(msg, "Double click successful! You have triggered the double-click action.");
         ExtentTestManager.logInfo("Double click action is being Ended");
         softAssert.assertAll();
     }
